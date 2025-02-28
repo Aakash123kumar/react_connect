@@ -1,3 +1,134 @@
-#heading {
-    color: red;
-}
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Arial", sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* App Layout */
+  .app-layout {
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  /* Header Styles */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo-container .logo {
+    height: 50px;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo-container .logo:hover {
+    transform: scale(1.1);
+  }
+  
+  .nav-iteams ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-iteams ul li {
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-iteams ul li:hover {
+    color: #ff6b6b;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+  }
+  
+  /* Restaurant Container */
+  .res-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  /* Restaurant Card */
+  .res-card {
+    width: 250px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .res-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .res-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px;
+    color: #333;
+  }
+  
+  .res-card h4 {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 5px 10px;
+    color: #666;
+  }
+  
+  /* Footer Styles */
+  .footer-container {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+  }
+  
+  .footer-iteams ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .footer-iteams ul li {
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-iteams ul li:hover {
+    color: #ff6b6b;
+  }
